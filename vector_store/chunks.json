@@ -1,0 +1,673 @@
+[
+  {
+    "id": 0,
+    "text": "Battle Mechanics Guide\n\nThis document describes core mechanics that determine how damage and turn order work in Pok\u00e9mon battles.\n\n--------------------------------------------------\nSame-Type Attack Bonus (STAB)\n--------------------------------------------------\n\n- If a Pok\u00e9mon uses a move that matches its type, the move\u2019s damage is increased\n- Standard STAB multiplier: 1.5\u00d7\n- Some abilities (e.g., Adaptability) increase STAB to 2\u00d7\n\n--------------------------------------------------\nCritical Hits\n--------------------------------------------------\n\n- Critical hits deal increased damage (1.5\u00d7)\n- Ignore negative stat changes on the attacker\n- Ignore positive stat boosts on the defender\n- Occur randomly, with increased chance for certain moves and abilities\n\n--------------------------------------------------\nTurn Order and Speed\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\battle_mechanics.txt",
+      "filename": "battle_mechanics.txt",
+      "stem": "battle_mechanics",
+      "chunk_index": 1,
+      "chunk_size": 886
+    }
+  },
+  {
+    "id": 1,
+    "text": "moves and abilities\n\n--------------------------------------------------\nTurn Order and Speed\n--------------------------------------------------\n\n- Pok\u00e9mon act in order of Speed stat (higher Speed moves first)\n- Priority moves can override Speed (e.g., Quick Attack)\n- Status conditions like Paralysis reduce Speed and affect turn order\n\n--------------------------------------------------\nAccuracy and Evasion\n--------------------------------------------------\n\n- Moves have an accuracy percentage that determines if they hit\n- Accuracy and evasion can be modified by moves and abilities\n- Some moves never miss under certain conditions\n\n--------------------------------------------------\nDamage Basics\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\battle_mechanics.txt",
+      "filename": "battle_mechanics.txt",
+      "stem": "battle_mechanics",
+      "chunk_index": 2,
+      "chunk_size": 752
+    }
+  },
+  {
+    "id": 2,
+    "text": "miss under certain conditions\n\n--------------------------------------------------\nDamage Basics\n--------------------------------------------------\n\nDamage depends on:\n- Attacking stat (Attack or Special Attack)\n- Defending stat (Defense or Special Defense)\n- Move power\n- Type effectiveness\n- STAB bonus\n- Random variation\n\n--------------------------------------------------\nKey Rules\n--------------------------------------------------\n\n- Type effectiveness and STAB stack together\n- Critical hits are calculated after most modifiers\n- Only one Pok\u00e9mon acts at a time per turn\n- Battle outcomes depend on combining multiple mechanics\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Same-type attack bonus; Critical hit.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\battle_mechanics.txt",
+      "filename": "battle_mechanics.txt",
+      "stem": "battle_mechanics",
+      "chunk_index": 3,
+      "chunk_size": 801
+    }
+  },
+  {
+    "id": 3,
+    "text": "----------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Same-type attack bonus; Critical hit. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Same-type_attack_bonus\nhttps://bulbapedia.bulbagarden.net/wiki/Critical_hit\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of core battle mechanics.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\battle_mechanics.txt",
+      "filename": "battle_mechanics.txt",
+      "stem": "battle_mechanics",
+      "chunk_index": 4,
+      "chunk_size": 450
+    }
+  },
+  {
+    "id": 4,
+    "text": "Berry Guide\n\nBerries are consumable held items that activate automatically under specific conditions in battle. \nThey can restore HP, cure status conditions, boost stats, reduce damage, or provide other one-time effects.\n\nBerries were introduced early in the Pok\u00e9mon series and later became an important part of held item strategy. Many Berries are used in competitive play because they can improve survivability or activate at key moments. \n\n--------------------------------------------------\nMain Types of Berries\n--------------------------------------------------\n\nHP Recovery Berries:\n- Restore HP when the holder falls below a certain threshold\n- Example: Sitrus Berry restores HP when the Pok\u00e9mon is low on health",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\berry.txt",
+      "filename": "berry.txt",
+      "stem": "berry",
+      "chunk_index": 1,
+      "chunk_size": 719
+    }
+  },
+  {
+    "id": 5,
+    "text": "Recovery Berries:\n- Restore HP when the holder falls below a certain threshold\n- Example: Sitrus Berry restores HP when the Pok\u00e9mon is low on health\n\nStatus-Healing Berries:\n- Cure a specific status condition automatically\n- Examples:\n - Cheri Berry cures paralysis\n - Chesto Berry cures sleep\n - Pecha Berry cures poison\n - Rawst Berry cures burn\n - Aspear Berry cures freeze\n\nPP Recovery Berries:\n- Restore PP for a move under certain conditions\n\nConfusion-Healing Berries:\n- Cure confusion when triggered\n\nAll-Purpose Healing Berries:\n- Cure multiple major conditions or provide broader recovery effects\n\nDamage-Reducing Berries:\n- Reduce damage from a specific type of attack once\n- These are useful for surviving super-effective hits\n\nStat-Boosting Berries:\n- Raise a stat when HP is low\n- Examples include Berries that can boost Speed, Attack, or other stats",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\berry.txt",
+      "filename": "berry.txt",
+      "stem": "berry",
+      "chunk_index": 2,
+      "chunk_size": 864
+    }
+  },
+  {
+    "id": 6,
+    "text": "super-effective hits\n\nStat-Boosting Berries:\n- Raise a stat when HP is low\n- Examples include Berries that can boost Speed, Attack, or other stats\n\n--------------------------------------------------\nBerry Mechanics\n--------------------------------------------------\n\n- Berries are usually consumed after activation\n- A Pok\u00e9mon can hold only one item at a time\n- Berry activation often depends on HP thresholds or battle conditions\n- Some abilities and moves can interact with Berries\n- Berries are widely used as held items for recovery, utility, and defensive planning \n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\berry.txt",
+      "filename": "berry.txt",
+      "stem": "berry",
+      "chunk_index": 3,
+      "chunk_size": 689
+    }
+  },
+  {
+    "id": 7,
+    "text": "and defensive planning \n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------\n\n- HP recovery Berries improve survivability\n- Status-healing Berries reduce disruption from burn, sleep, poison, and paralysis\n- Damage-reducing Berries help a Pok\u00e9mon survive key matchups\n- Stat-boosting Berries can create sweep opportunities late in battle\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Berry. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Berry\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of Berry effects and their role as held items in battle.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\berry.txt",
+      "filename": "berry.txt",
+      "stem": "berry",
+      "chunk_index": 4,
+      "chunk_size": 800
+    }
+  },
+  {
+    "id": 8,
+    "text": "Choice Items Guide\n\nChoice Items are held items that boost one stat by 50% but lock the Pok\u00e9mon into the first move it uses until it switches out.\n\nThese items are widely used in competitive play because they provide a strong immediate advantage in power or speed.\n\n--------------------------------------------------\nMain Choice Items\n--------------------------------------------------\n\nChoice Band:\n- Increases Attack by 50%\n- Locks the user into the first move selected\n- Best used on physical attackers\n\nChoice Specs:\n- Increases Special Attack by 50%\n- Locks the user into the first move selected\n- Best used on special attackers\n\nChoice Scarf:\n- Increases Speed by 50%\n- Locks the user into the first move selected\n- Best used to outspeed opponents\n\n--------------------------------------------------\nChoice Item Mechanics\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\choice_items.txt",
+      "filename": "choice_items.txt",
+      "stem": "choice_items",
+      "chunk_index": 1,
+      "chunk_size": 878
+    }
+  },
+  {
+    "id": 9,
+    "text": "to outspeed opponents\n\n--------------------------------------------------\nChoice Item Mechanics\n--------------------------------------------------\n\n- The held Pok\u00e9mon can only use the first move it selects\n- The move lock remains until the Pok\u00e9mon switches out\n- Status moves can also cause the user to become locked\n- Switching resets the lock\n- Choice Items are not consumed after use\n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------\n\n- Choice Band is used to maximize physical damage output\n- Choice Specs is used to maximize special damage output\n- Choice Scarf is used to gain speed control and revenge kill faster threats\n- These items are strong but require prediction because the move lock can be exploited",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\choice_items.txt",
+      "filename": "choice_items.txt",
+      "stem": "choice_items",
+      "chunk_index": 2,
+      "chunk_size": 784
+    }
+  },
+  {
+    "id": 10,
+    "text": "is used to gain speed control and revenge kill faster threats\n- These items are strong but require prediction because the move lock can be exploited\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of Choice Item effects and their role in competitive gameplay.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\choice_items.txt",
+      "filename": "choice_items.txt",
+      "stem": "choice_items",
+      "chunk_index": 3,
+      "chunk_size": 560
+    }
+  },
+  {
+    "id": 11,
+    "text": "Defensive Items Guide\n\nDefensive items are held items that reduce damage taken, improve defenses, or increase survivability in battle. \nThey are commonly used to make Pok\u00e9mon harder to defeat or to survive key attacks.\n\n--------------------------------------------------\nMain Defensive Items\n--------------------------------------------------\n\nAssault Vest:\n- Increases Special Defense by 50%\n- Prevents the use of status moves\n\nEviolite:\n- Increases Defense and Special Defense by 50%\n- Only works if the Pok\u00e9mon can still evolve\n\nRocky Helmet:\n- Deals damage to attackers when they make contact (1/6 of their max HP)\n\nAir Balloon:\n- Grants immunity to Ground-type moves\n- Pops after the Pok\u00e9mon is hit\n\nHeavy-Duty Boots:\n- Prevents damage and effects from entry hazards\n\nFocus Band:\n- Has a chance to survive a hit with 1 HP",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\defensive_items.txt",
+      "filename": "defensive_items.txt",
+      "stem": "defensive_items",
+      "chunk_index": 1,
+      "chunk_size": 826
+    }
+  },
+  {
+    "id": 12,
+    "text": "after the Pok\u00e9mon is hit\n\nHeavy-Duty Boots:\n- Prevents damage and effects from entry hazards\n\nFocus Band:\n- Has a chance to survive a hit with 1 HP\n\n--------------------------------------------------\nDefensive Mechanics\n--------------------------------------------------\n\n- Defensive items do not usually increase damage output\n- Many activate automatically without conditions\n- Some items provide immunity to specific mechanics (e.g., hazards, Ground moves)\n- Effects remain active as long as the item is held (unless consumed or removed)\n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\defensive_items.txt",
+      "filename": "defensive_items.txt",
+      "stem": "defensive_items",
+      "chunk_index": 2,
+      "chunk_size": 658
+    }
+  },
+  {
+    "id": 13,
+    "text": "(unless consumed or removed)\n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------\n\n- Assault Vest is used to tank special attacks\n- Eviolite is used on unevolved Pok\u00e9mon to make them extremely bulky\n- Heavy-Duty Boots are used to avoid hazard damage\n- Air Balloon is used to temporarily remove Ground-type weaknesses\n- Rocky Helmet punishes physical attackers\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of defensive item effects and their role in competitive gameplay.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\defensive_items.txt",
+      "filename": "defensive_items.txt",
+      "stem": "defensive_items",
+      "chunk_index": 3,
+      "chunk_size": 840
+    }
+  },
+  {
+    "id": 14,
+    "text": "Entry Hazards Guide\n\nEntry hazards are battlefield effects that damage or affect Pok\u00e9mon when they switch into battle. \nThey remain on the field until removed and primarily impact grounded Pok\u00e9mon.\n\n--------------------------------------------------\nTypes of Entry Hazards\n--------------------------------------------------\n\nStealth Rock:\n- Deals damage based on the Pok\u00e9mon\u2019s weakness or resistance to Rock-type moves\n- Damage ranges from 1/32 (resisted) up to 1/2 (4\u00d7 weakness) of max HP\n\nSpikes:\n- Damages grounded Pok\u00e9mon when they switch in\n- 1 layer: 1/8 of max HP\n- 2 layers: 1/6 of max HP\n- 3 layers: 1/4 of max HP\n\nToxic Spikes:\n- Poisons grounded Pok\u00e9mon when they switch in\n- 1 layer: regular poison\n- 2 layers: badly poisoned (increasing damage each turn)\n\nSticky Web:\n- Lowers Speed of grounded Pok\u00e9mon upon switch-in",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\entry_hazards.txt",
+      "filename": "entry_hazards.txt",
+      "stem": "entry_hazards",
+      "chunk_index": 1,
+      "chunk_size": 830
+    }
+  },
+  {
+    "id": 15,
+    "text": "in\n- 1 layer: regular poison\n- 2 layers: badly poisoned (increasing damage each turn)\n\nSticky Web:\n- Lowers Speed of grounded Pok\u00e9mon upon switch-in\n\n--------------------------------------------------\nHazard Mechanics\n--------------------------------------------------\n\n- Only affect Pok\u00e9mon when they enter the field\n- Flying-type Pok\u00e9mon and those with Levitate are immune to ground-based hazards (Spikes, Toxic Spikes, Sticky Web)\n- Stealth Rock affects all Pok\u00e9mon regardless of grounding\n- Multiple hazards can be active at the same time\n- Hazards can be removed by moves such as Rapid Spin or Defog\n\n--------------------------------------------------\nCompetitive Impact\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\entry_hazards.txt",
+      "filename": "entry_hazards.txt",
+      "stem": "entry_hazards",
+      "chunk_index": 2,
+      "chunk_size": 726
+    }
+  },
+  {
+    "id": 16,
+    "text": "as Rapid Spin or Defog\n\n--------------------------------------------------\nCompetitive Impact\n--------------------------------------------------\n\n- Hazards apply constant pressure by dealing damage over time\n- They punish frequent switching\n- They can break Focus Sash and reduce survivability\n- Often used in competitive play to control the pace of battle\n\n--------------------------------------------------\nAbility Interaction\n--------------------------------------------------\n\nSome abilities interact with entry hazards.\n\nExamples:\n- Magic Guard: Prevents damage from hazards\n- Levitate: Grants immunity to ground-based hazards\n- Overcoat: Prevents damage from certain indirect effects\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Entry hazards.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\entry_hazards.txt",
+      "filename": "entry_hazards.txt",
+      "stem": "entry_hazards",
+      "chunk_index": 3,
+      "chunk_size": 834
+    }
+  },
+  {
+    "id": 17,
+    "text": "fects\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Entry hazards. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/List_of_moves_that_cause_entry_hazards\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of entry hazards and their role in competitive gameplay.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\entry_hazards.txt",
+      "filename": "entry_hazards.txt",
+      "stem": "entry_hazards",
+      "chunk_index": 4,
+      "chunk_size": 444
+    }
+  },
+  {
+    "id": 18,
+    "text": "Evolution Items Guide\n\nEvolution items are special items that cause Pok\u00e9mon to evolve when used, held, or triggered under specific conditions. \n\nThere are two main types:\n1. Items used directly on a Pok\u00e9mon\n2. Items that must be held during trade or leveling\n\n--------------------------------------------------\n1. Evolution Stones (Used Directly)\n--------------------------------------------------\n\nFire Stone:\n- Vulpix \u2192 Ninetales\n- Growlithe \u2192 Arcanine\n- Eevee \u2192 Flareon\n- Pansear \u2192 Simisear\n\nWater Stone:\n- Poliwhirl \u2192 Poliwrath\n- Shellder \u2192 Cloyster\n- Staryu \u2192 Starmie\n- Eevee \u2192 Vaporeon\n\nThunder Stone:\n- Pikachu \u2192 Raichu\n- Eevee \u2192 Jolteon\n- Eelektrik \u2192 Eelektross\n\nLeaf Stone:\n- Gloom \u2192 Vileplume\n- Weepinbell \u2192 Victreebel\n- Exeggcute \u2192 Exeggutor\n\nMoon Stone:\n- Nidorino \u2192 Nidoking\n- Nidorina \u2192 Nidoqueen\n- Clefairy \u2192 Clefable\n- Jigglypuff \u2192 Wigglytuff",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\evolution_items.txt",
+      "filename": "evolution_items.txt",
+      "stem": "evolution_items",
+      "chunk_index": 1,
+      "chunk_size": 858
+    }
+  },
+  {
+    "id": 19,
+    "text": "\u2192 Victreebel\n- Exeggcute \u2192 Exeggutor\n\nMoon Stone:\n- Nidorino \u2192 Nidoking\n- Nidorina \u2192 Nidoqueen\n- Clefairy \u2192 Clefable\n- Jigglypuff \u2192 Wigglytuff\n\nSun Stone:\n- Gloom \u2192 Bellossom\n- Sunkern \u2192 Sunflora\n- Cottonee \u2192 Whimsicott\n- Petilil \u2192 Lilligant\n\nShiny Stone:\n- Togetic \u2192 Togekiss\n- Roselia \u2192 Roserade\n\nDusk Stone:\n- Murkrow \u2192 Honchkrow\n- Misdreavus \u2192 Mismagius\n\nDawn Stone:\n- Kirlia \u2192 Gallade\n- Snorunt \u2192 Froslass\n\nIce Stone:\n- Alolan Vulpix \u2192 Alolan Ninetales\n- Eevee \u2192 Glaceon\n\n--------------------------------------------------\n2. Held Item Evolutions (Trade or Level Up)\n--------------------------------------------------\n\nThese Pok\u00e9mon evolve when holding an item and meeting a condition (trade or level up).",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\evolution_items.txt",
+      "filename": "evolution_items.txt",
+      "stem": "evolution_items",
+      "chunk_index": 2,
+      "chunk_size": 710
+    }
+  },
+  {
+    "id": 20,
+    "text": "Up)\n--------------------------------------------------\n\nThese Pok\u00e9mon evolve when holding an item and meeting a condition (trade or level up). \n\nTrade Evolutions with Items:\n- Onix + Metal Coat \u2192 Steelix\n- Scyther + Metal Coat \u2192 Scizor\n- Seadra + Dragon Scale \u2192 Kingdra\n- Slowpoke + King\u2019s Rock \u2192 Slowking\n- Poliwhirl + King\u2019s Rock \u2192 Politoed\n- Porygon + Upgrade \u2192 Porygon2\n- Porygon2 + Dubious Disc \u2192 Porygon-Z\n- Electabuzz + Electirizer \u2192 Electivire\n- Magmar + Magmarizer \u2192 Magmortar\n- Rhydon + Protector \u2192 Rhyperior\n\nLevel-Up While Holding Item:\n- Gligar + Razor Fang (night) \u2192 Gliscor\n- Sneasel + Razor Claw (night) \u2192 Weavile\n- Happiny + Oval Stone (day) \u2192 Chansey\n\n--------------------------------------------------\n3. Special Evolution Items\n--------------------------------------------------\n\nThese items trigger unique evolutions.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\evolution_items.txt",
+      "filename": "evolution_items.txt",
+      "stem": "evolution_items",
+      "chunk_index": 3,
+      "chunk_size": 838
+    }
+  },
+  {
+    "id": 21,
+    "text": "Special Evolution Items\n--------------------------------------------------\n\nThese items trigger unique evolutions.\n\nExamples:\n- Applin + Sweet Apple \u2192 Appletun\n- Applin + Tart Apple \u2192 Flapple\n- Applin + Syrupy Apple \u2192 Dipplin\n- Gimmighoul + 999 coins \u2192 Gholdengo\n\n--------------------------------------------------\nEvolution Mechanics\n--------------------------------------------------\n\n- Some items are used directly (stones)\n- Some must be held during trade or level-up\n- Some evolutions depend on time of day or conditions\n- Items are consumed after use in most cases\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Evolution item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Evolution_item",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\evolution_items.txt",
+      "filename": "evolution_items.txt",
+      "stem": "evolution_items",
+      "chunk_index": 4,
+      "chunk_size": 787
+    }
+  },
+  {
+    "id": 22,
+    "text": "------------------------------------------\nBulbapedia. (n.d.). Evolution item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Evolution_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of evolution mechanics and item-based evolution conditions.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\evolution_items.txt",
+      "filename": "evolution_items.txt",
+      "stem": "evolution_items",
+      "chunk_index": 5,
+      "chunk_size": 351
+    }
+  },
+  {
+    "id": 23,
+    "text": "Held Items Guide (Complete Categories)\n\nHeld items are items a Pok\u00e9mon can hold to gain passive effects in battle. These effects can increase stats, restore HP, modify moves, or trigger under specific conditions.\n\nHeld items are divided into categories based on their effects.\n\n--------------------------------------------------\n1. Berries (Consumable Items)\n--------------------------------------------------\n\nBerries are one-time use items that activate automatically.\n\nTypes of Berries:\n\nHP Recovery Berries:\n- Restore HP when below a threshold (e.g., Sitrus Berry restores ~25% HP)\n\nStatus-Healing Berries:\n- Cure status conditions (e.g., Lum Berry cures any status)\n\nDamage-Reducing Berries:\n- Reduce damage from a specific type (e.g., Occa Berry reduces Fire damage)\n\nStat-Boosting Berries:\n- Increase a stat when HP is low (e.g., Salac Berry boosts Speed)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 1,
+      "chunk_size": 862
+    }
+  },
+  {
+    "id": 24,
+    "text": "a specific type (e.g., Occa Berry reduces Fire damage)\n\nStat-Boosting Berries:\n- Increase a stat when HP is low (e.g., Salac Berry boosts Speed)\n\nBerries are consumed after activation.\n\n--------------------------------------------------\n2. Choice Items\n--------------------------------------------------\n\nChoice items increase a stat but restrict move usage.\n\nExamples:\n- Choice Band: +50% Attack\n- Choice Specs: +50% Special Attack\n- Choice Scarf: +50% Speed\n\nEffect:\n- User is locked into one move until switching out\n\n--------------------------------------------------\n3. Type-Enhancing Items\n--------------------------------------------------\n\nThese items boost moves of a specific type.\n\nEffect:\n- Increase damage of matching type moves by ~20%\n\nExamples:\n- Charcoal (Fire)\n- Mystic Water (Water)\n- Magnet (Electric)\n\n--------------------------------------------------\n4.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 2,
+      "chunk_size": 876
+    }
+  },
+  {
+    "id": 25,
+    "text": "type moves by ~20%\n\nExamples:\n- Charcoal (Fire)\n- Mystic Water (Water)\n- Magnet (Electric)\n\n--------------------------------------------------\n4. Recovery Items\n--------------------------------------------------\n\nThese provide healing over time or under conditions.\n\nExamples:\n- Leftovers: Restores 1/16 HP each turn\n- Black Sludge: Heals Poison-types, damages others\n\n--------------------------------------------------\n5. Damage-Boosting Items\n--------------------------------------------------\n\nIncrease damage output with trade-offs.\n\nExamples:\n- Life Orb: +30% damage, loses 10% HP per attack\n- Expert Belt: Boosts super-effective moves\n\n--------------------------------------------------\n6. Defensive Items\n--------------------------------------------------\n\nReduce damage or improve survivability.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 3,
+      "chunk_size": 803
+    }
+  },
+  {
+    "id": 26,
+    "text": "--------------------------------------\n6. Defensive Items\n--------------------------------------------------\n\nReduce damage or improve survivability.\n\nExamples:\n- Assault Vest: +50% Special Defense, cannot use status moves\n- Eviolite: Boosts Defense and Special Defense if the Pok\u00e9mon can evolve\n\n--------------------------------------------------\n7. Trigger-Based Items\n--------------------------------------------------\n\nActivate under certain conditions.\n\nExamples:\n- Focus Sash: Survive with 1 HP from full health\n- Weakness Policy: Boosts Attack and Special Attack when hit by super-effective move\n\n--------------------------------------------------\n8. Utility Items\n--------------------------------------------------\n\nProvide unique effects not directly tied to damage.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 4,
+      "chunk_size": 775
+    }
+  },
+  {
+    "id": 27,
+    "text": "Utility Items\n--------------------------------------------------\n\nProvide unique effects not directly tied to damage.\n\nExamples:\n- Rocky Helmet: Damages attackers on contact\n- Air Balloon: Grants temporary Ground immunity\n- Heavy-Duty Boots: Prevents hazard damage\n\n--------------------------------------------------\n9. Form-Changing Items\n--------------------------------------------------\n\nChange a Pok\u00e9mon\u2019s form or typing.\n\nExamples:\n- Plates (Arceus type change)\n- Drives (Genesect move type)\n- Memories (Silvally type change)\n\n--------------------------------------------------\n10. Special Battle Mechanics Items\n--------------------------------------------------\n\nItems tied to special mechanics.\n\nExamples:\n- Mega Stones: Enable Mega Evolution\n- Z-Crystals: Enable Z-Moves\n- Gems: Boost a move once",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 5,
+      "chunk_size": 806
+    }
+  },
+  {
+    "id": 28,
+    "text": "tied to special mechanics.\n\nExamples:\n- Mega Stones: Enable Mega Evolution\n- Z-Crystals: Enable Z-Moves\n- Gems: Boost a move once\n\n--------------------------------------------------\nItem Mechanics\n--------------------------------------------------\n\n- A Pok\u00e9mon can hold only one item at a time\n- Some items are consumed after activation\n- Items can be removed or swapped\n- Many items activate automatically without input\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured categorization of held item mechanics and competitive applications.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\held_items.txt",
+      "filename": "held_items.txt",
+      "stem": "held_items",
+      "chunk_index": 6,
+      "chunk_size": 825
+    }
+  },
+  {
+    "id": 29,
+    "text": "Pok\u00e9mon Ability Guide\n\nThis document describes Pok\u00e9mon abilities, which are passive effects that influence battle mechanics. Each Pok\u00e9mon can have one or more abilities that activate automatically under certain conditions.\n\nAbilities can affect damage, status conditions, weather, switching mechanics, and other battle interactions.\n\n--------------------------------------------------\nWhat is an Ability?\n--------------------------------------------------\nAn ability is a passive trait assigned to a Pok\u00e9mon that provides special effects in battle or in the overworld. Abilities do not require activation by the player and are always in effect unless suppressed.\n\nEach Pok\u00e9mon species may have:\n- One or two standard abilities\n- One hidden ability (rarer, often obtained through special methods)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_abilites.txt",
+      "filename": "pokemon_abilites.txt",
+      "stem": "pokemon_abilites",
+      "chunk_index": 1,
+      "chunk_size": 795
+    }
+  },
+  {
+    "id": 30,
+    "text": "suppressed.\n\nEach Pok\u00e9mon species may have:\n- One or two standard abilities\n- One hidden ability (rarer, often obtained through special methods)\n\n--------------------------------------------------\nAbility Categories\n--------------------------------------------------\n\n1. Offensive Abilities\nThese abilities increase damage output or apply pressure to opponents.\n\nExamples:\n- Huge Power: Doubles the Pok\u00e9mon\u2019s Attack stat\n- Blaze: Boosts Fire-type moves when HP is low\n- Adaptability: Increases same-type attack bonus (STAB)\n\n--------------------------------------------------\n\n2. Defensive Abilities\nThese abilities reduce damage taken or provide immunity.\n\nExamples:\n- Levitate: Grants immunity to Ground-type moves\n- Thick Fat: Reduces damage from Fire and Ice moves\n- Sturdy: Prevents being knocked out in one hit from full HP\n\n--------------------------------------------------\n\n3.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_abilites.txt",
+      "filename": "pokemon_abilites.txt",
+      "stem": "pokemon_abilites",
+      "chunk_index": 2,
+      "chunk_size": 885
+    }
+  },
+  {
+    "id": 31,
+    "text": "damage from Fire and Ice moves\n- Sturdy: Prevents being knocked out in one hit from full HP\n\n--------------------------------------------------\n\n3. Status-Based Abilities\nThese abilities interact with status conditions.\n\nExamples:\n- Guts: Increases Attack when affected by a status condition\n- Immunity: Prevents poisoning\n- Synchronize: Passes status conditions to the opponent\n\n--------------------------------------------------\n\n4. Weather-Based Abilities\nThese abilities activate or benefit from weather conditions.\n\nExamples:\n- Drizzle: Summons rain when entering battle\n- Drought: Summons harsh sunlight\n- Swift Swim: Doubles Speed in rain\n\n--------------------------------------------------\n\n5. Utility Abilities\nThese provide unique effects that influence gameplay.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_abilites.txt",
+      "filename": "pokemon_abilites.txt",
+      "stem": "pokemon_abilites",
+      "chunk_index": 3,
+      "chunk_size": 773
+    }
+  },
+  {
+    "id": 32,
+    "text": "Speed in rain\n\n--------------------------------------------------\n\n5. Utility Abilities\nThese provide unique effects that influence gameplay.\n\nExamples:\n- Intimidate: Lowers opponent\u2019s Attack upon entry\n- Pressure: Causes opponent to use more PP\n- Pickup: May obtain items after battle\n\n--------------------------------------------------\nAbility Mechanics\n--------------------------------------------------\n\n- Abilities activate automatically without player input\n- Some abilities trigger on entry into battle\n- Some abilities activate under specific conditions (e.g., low HP, weather)\n- Certain moves and abilities can suppress or ignore abilities\n\n--------------------------------------------------\nHidden Abilities\n--------------------------------------------------\n\nHidden abilities are special abilities that are less common and often provide competitive advantages.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_abilites.txt",
+      "filename": "pokemon_abilites.txt",
+      "stem": "pokemon_abilites",
+      "chunk_index": 4,
+      "chunk_size": 871
+    }
+  },
+  {
+    "id": 33,
+    "text": "----------------------------------------------\n\nHidden abilities are special abilities that are less common and often provide competitive advantages.\n\nExamples:\n- Protean: Changes the Pok\u00e9mon\u2019s type to match its move\n- Magic Bounce: Reflects status moves back to the opponent\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Ability. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Ability\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured and detailed explanation of Pok\u00e9mon abilities.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_abilites.txt",
+      "filename": "pokemon_abilites.txt",
+      "stem": "pokemon_abilites",
+      "chunk_index": 5,
+      "chunk_size": 655
+    }
+  },
+  {
+    "id": 34,
+    "text": "Pok\u00e9mon Type Effectiveness Guide\n\nThis document describes how different Pok\u00e9mon types interact in battle. \nEach attacking type has strengths (super effective), weaknesses (not very effective), and immunities (no effect) against defending types.\n\nEffectiveness Multipliers:\n- 2\u00d7: Super effective (strong)\n- 0.5\u00d7: Not very effective (weak)\n- 0\u00d7: No effect (immune)\n- 1\u00d7: Neutral\n\n--------------------------------------------------\nNORMAL TYPE\n--------------------------------------------------\nStrong Against:\n- None\n\nWeak Against:\n- Rock (0.5\u00d7)\n- Steel (0.5\u00d7)\n\nNo Effect:\n- Ghost (0\u00d7)\n\n--------------------------------------------------\nFIRE TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Ice (2\u00d7)\n- Bug (2\u00d7)\n- Steel (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Water (0.5\u00d7)\n- Rock (0.5\u00d7)\n- Dragon (0.5\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 1,
+      "chunk_size": 834
+    }
+  },
+  {
+    "id": 35,
+    "text": "Against:\n- Grass (2\u00d7)\n- Ice (2\u00d7)\n- Bug (2\u00d7)\n- Steel (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Water (0.5\u00d7)\n- Rock (0.5\u00d7)\n- Dragon (0.5\u00d7)\n\n--------------------------------------------------\nWATER TYPE\n--------------------------------------------------\nStrong Against:\n- Fire (2\u00d7)\n- Ground (2\u00d7)\n- Rock (2\u00d7)\n\nWeak Against:\n- Water (0.5\u00d7)\n- Grass (0.5\u00d7)\n- Dragon (0.5\u00d7)\n\n--------------------------------------------------\nELECTRIC TYPE\n--------------------------------------------------\nStrong Against:\n- Water (2\u00d7)\n- Flying (2\u00d7)\n\nWeak Against:\n- Electric (0.5\u00d7)\n- Grass (0.5\u00d7)\n- Dragon (0.5\u00d7)\n\nNo Effect:\n- Ground (0\u00d7)\n\n--------------------------------------------------\nGRASS TYPE\n--------------------------------------------------\nStrong Against:\n- Water (2\u00d7)\n- Ground (2\u00d7)\n- Rock (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Grass (0.5\u00d7)\n- Poison (0.5\u00d7)\n- Flying (0.5\u00d7)\n- Bug (0.5\u00d7)\n- Dragon (0.5\u00d7)\n- Steel (0.5\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 2,
+      "chunk_size": 898
+    }
+  },
+  {
+    "id": 36,
+    "text": "Ground (2\u00d7)\n- Rock (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Grass (0.5\u00d7)\n- Poison (0.5\u00d7)\n- Flying (0.5\u00d7)\n- Bug (0.5\u00d7)\n- Dragon (0.5\u00d7)\n- Steel (0.5\u00d7)\n\n--------------------------------------------------\nICE TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Ground (2\u00d7)\n- Flying (2\u00d7)\n- Dragon (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Water (0.5\u00d7)\n- Ice (0.5\u00d7)\n- Steel (0.5\u00d7)\n\n--------------------------------------------------\nFIGHTING TYPE\n--------------------------------------------------\nStrong Against:\n- Normal (2\u00d7)\n- Ice (2\u00d7)\n- Rock (2\u00d7)\n- Dark (2\u00d7)\n- Steel (2\u00d7)\n\nWeak Against:\n- Poison (0.5\u00d7)\n- Flying (0.5\u00d7)\n- Psychic (0.5\u00d7)\n- Bug (0.5\u00d7)\n- Fairy (0.5\u00d7)\n\nNo Effect:\n- Ghost (0\u00d7)\n\n--------------------------------------------------\nPOISON TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Fairy (2\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 3,
+      "chunk_size": 867
+    }
+  },
+  {
+    "id": 37,
+    "text": "--------------------------------------------\nPOISON TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Fairy (2\u00d7)\n\nWeak Against:\n- Poison (0.5\u00d7)\n- Ground (0.5\u00d7)\n- Rock (0.5\u00d7)\n- Ghost (0.5\u00d7)\n\nNo Effect:\n- Steel (0\u00d7)\n\n--------------------------------------------------\nGROUND TYPE\n--------------------------------------------------\nStrong Against:\n- Fire (2\u00d7)\n- Electric (2\u00d7)\n- Poison (2\u00d7)\n- Rock (2\u00d7)\n- Steel (2\u00d7)\n\nWeak Against:\n- Grass (0.5\u00d7)\n- Bug (0.5\u00d7)\n\nNo Effect:\n- Flying (0\u00d7)\n\n--------------------------------------------------\nFLYING TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Fighting (2\u00d7)\n- Bug (2\u00d7)\n\nWeak Against:\n- Electric (0.5\u00d7)\n- Rock (0.5\u00d7)\n- Steel (0.5\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 4,
+      "chunk_size": 750
+    }
+  },
+  {
+    "id": 38,
+    "text": "Against:\n- Grass (2\u00d7)\n- Fighting (2\u00d7)\n- Bug (2\u00d7)\n\nWeak Against:\n- Electric (0.5\u00d7)\n- Rock (0.5\u00d7)\n- Steel (0.5\u00d7)\n\n--------------------------------------------------\nPSYCHIC TYPE\n--------------------------------------------------\nStrong Against:\n- Fighting (2\u00d7)\n- Poison (2\u00d7)\n\nWeak Against:\n- Psychic (0.5\u00d7)\n- Steel (0.5\u00d7)\n\nNo Effect:\n- Dark (0\u00d7)\n\n--------------------------------------------------\nBUG TYPE\n--------------------------------------------------\nStrong Against:\n- Grass (2\u00d7)\n- Psychic (2\u00d7)\n- Dark (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Fighting (0.5\u00d7)\n- Poison (0.5\u00d7)\n- Flying (0.5\u00d7)\n- Ghost (0.5\u00d7)\n- Steel (0.5\u00d7)\n- Fairy (0.5\u00d7)\n\n--------------------------------------------------\nROCK TYPE\n--------------------------------------------------\nStrong Against:\n- Fire (2\u00d7)\n- Ice (2\u00d7)\n- Flying (2\u00d7)\n- Bug (2\u00d7)\n\nWeak Against:\n- Fighting (0.5\u00d7)\n- Ground (0.5\u00d7)\n- Steel (0.5\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 5,
+      "chunk_size": 876
+    }
+  },
+  {
+    "id": 39,
+    "text": "Against:\n- Fire (2\u00d7)\n- Ice (2\u00d7)\n- Flying (2\u00d7)\n- Bug (2\u00d7)\n\nWeak Against:\n- Fighting (0.5\u00d7)\n- Ground (0.5\u00d7)\n- Steel (0.5\u00d7)\n\n--------------------------------------------------\nGHOST TYPE\n--------------------------------------------------\nStrong Against:\n- Psychic (2\u00d7)\n- Ghost (2\u00d7)\n\nWeak Against:\n- Dark (0.5\u00d7)\n\nNo Effect:\n- Normal (0\u00d7)\n\n--------------------------------------------------\nDRAGON TYPE\n--------------------------------------------------\nStrong Against:\n- Dragon (2\u00d7)\n\nWeak Against:\n- Steel (0.5\u00d7)\n\nNo Effect:\n- Fairy (0\u00d7)\n\n--------------------------------------------------\nDARK TYPE\n--------------------------------------------------\nStrong Against:\n- Psychic (2\u00d7)\n- Ghost (2\u00d7)\n\nWeak Against:\n- Fighting (0.5\u00d7)\n- Dark (0.5\u00d7)\n- Fairy (0.5\u00d7)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 6,
+      "chunk_size": 752
+    }
+  },
+  {
+    "id": 40,
+    "text": "-------------------------------------------\nStrong Against:\n- Psychic (2\u00d7)\n- Ghost (2\u00d7)\n\nWeak Against:\n- Fighting (0.5\u00d7)\n- Dark (0.5\u00d7)\n- Fairy (0.5\u00d7)\n\n--------------------------------------------------\nSTEEL TYPE\n--------------------------------------------------\nStrong Against:\n- Ice (2\u00d7)\n- Rock (2\u00d7)\n- Fairy (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Water (0.5\u00d7)\n- Electric (0.5\u00d7)\n- Steel (0.5\u00d7)\n\n--------------------------------------------------\nFAIRY TYPE\n--------------------------------------------------\nStrong Against:\n- Fighting (2\u00d7)\n- Dragon (2\u00d7)\n- Dark (2\u00d7)\n\nWeak Against:\n- Fire (0.5\u00d7)\n- Poison (0.5\u00d7)\n- Steel (0.5\u00d7)\n\nDual-Type Note:\nIf a Pok\u00e9mon has two types, multiply the effectiveness.\nExample:\n- 2\u00d7 and 2\u00d7 = 4\u00d7 (very strong)\n- 2\u00d7 and 0.5\u00d7 = 1\u00d7 (neutral)\n- 0\u00d7 overrides everything (immune)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 7,
+      "chunk_size": 801
+    }
+  },
+  {
+    "id": 41,
+    "text": "has two types, multiply the effectiveness.\nExample:\n- 2\u00d7 and 2\u00d7 = 4\u00d7 (very strong)\n- 2\u00d7 and 0.5\u00d7 = 1\u00d7 (neutral)\n- 0\u00d7 overrides everything (immune)\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Type. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Type\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured and detailed explanation of Pok\u00e9mon types.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\pokemon_types.txt",
+      "filename": "pokemon_types.txt",
+      "stem": "pokemon_types",
+      "chunk_index": 8,
+      "chunk_size": 516
+    }
+  },
+  {
+    "id": 42,
+    "text": "Pok\u00e9mon Status Conditions Guide\n\nThis document describes status conditions, which are effects that impact a Pok\u00e9mon\u2019s ability to battle. These conditions can reduce stats, prevent actions, or deal damage over time.\n\nStatus conditions are divided into two main categories: non-volatile and volatile.\n\n--------------------------------------------------\nTypes of Status Conditions\n--------------------------------------------------\n\n1. Non-Volatile Status Conditions\nThese are major status conditions that persist even after switching out and often last until healed.\n\nA Pok\u00e9mon can only have ONE non-volatile status condition at a time.\n\nExamples include:\n- Burn\n- Paralysis\n- Poison\n- Sleep\n- Freeze\n\nThese conditions usually require healing through items, abilities, or visiting a Pok\u00e9mon Center.\n\n--------------------------------------------------\n\n2.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\status_conditions.txt",
+      "filename": "status_conditions.txt",
+      "stem": "status_conditions",
+      "chunk_index": 1,
+      "chunk_size": 852
+    }
+  },
+  {
+    "id": 43,
+    "text": "conditions usually require healing through items, abilities, or visiting a Pok\u00e9mon Center.\n\n--------------------------------------------------\n\n2. Volatile Status Conditions\nThese are temporary effects that only last during battle or for a limited number of turns.\n\nA Pok\u00e9mon can have multiple volatile conditions at the same time.\n\nExamples include:\n- Confusion\n- Flinch\n- Infatuation\n\nThese conditions typically wear off after a few turns or when the Pok\u00e9mon switches out.\n\n--------------------------------------------------\nCommon Status Conditions\n--------------------------------------------------\n\nBurn:\n- Deals damage each turn (1/16 of max HP)\n- Reduces physical Attack stat by 50%\n\nParalysis:\n- Reduces Speed to 50% of its original value\n- 25% chance each turn that the Pok\u00e9mon cannot move\n\nPoison:\n- Deals damage each turn (1/8 of max HP)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\status_conditions.txt",
+      "filename": "status_conditions.txt",
+      "stem": "status_conditions",
+      "chunk_index": 2,
+      "chunk_size": 848
+    }
+  },
+  {
+    "id": 44,
+    "text": "Reduces Speed to 50% of its original value\n- 25% chance each turn that the Pok\u00e9mon cannot move\n\nPoison:\n- Deals damage each turn (1/8 of max HP)\n\nBadly Poisoned (Toxic):\n- Damage increases each turn (starts at 1/16, then increases each turn)\n\nSleep:\n- Prevents the Pok\u00e9mon from acting for 1\u20133 turns\n\nFreeze:\n- Prevents the Pok\u00e9mon from acting\n- Has a chance each turn to thaw (or can be cured by certain moves)\n\nConfusion (volatile):\n- Lasts 1\u20134 turns\n- Each turn, there is a chance (~33%) the Pok\u00e9mon hurts itself instead of attacking\n\n--------------------------------------------------\nBattle Impact\n--------------------------------------------------\n\n- Status conditions can significantly weaken a Pok\u00e9mon\n- Some abilities and moves rely on status conditions\n- Certain types are immune to specific conditions\n (e.g., Steel-types cannot be poisoned)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\status_conditions.txt",
+      "filename": "status_conditions.txt",
+      "stem": "status_conditions",
+      "chunk_index": 3,
+      "chunk_size": 851
+    }
+  },
+  {
+    "id": 45,
+    "text": "Some abilities and moves rely on status conditions\n- Certain types are immune to specific conditions\n (e.g., Steel-types cannot be poisoned)\n\n--------------------------------------------------\nHealing and Removal\n--------------------------------------------------\n\nStatus conditions can be removed by:\n- Items (e.g., Full Heal)\n- Moves (e.g., Aromatherapy)\n- Abilities (e.g., Natural Cure)\n- Visiting a Pok\u00e9mon Center\n\n--------------------------------------------------\nImportant Rules\n--------------------------------------------------\n\n- Only one non-volatile status condition can be active at a time \n- Multiple volatile conditions can stack \n- Non-volatile conditions persist outside battle until healed \n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Status condition.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\status_conditions.txt",
+      "filename": "status_conditions.txt",
+      "stem": "status_conditions",
+      "chunk_index": 4,
+      "chunk_size": 856
+    }
+  },
+  {
+    "id": 46,
+    "text": "--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Status condition. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Status_condition\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of battle mechanics.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\status_conditions.txt",
+      "filename": "status_conditions.txt",
+      "stem": "status_conditions",
+      "chunk_index": 5,
+      "chunk_size": 382
+    }
+  },
+  {
+    "id": 47,
+    "text": "Terrain Effects Guide\n\nTerrain conditions are battlefield effects that influence grounded Pok\u00e9mon. \nOnly Pok\u00e9mon that are touching the ground are affected by terrain effects.\n\nTerrain typically lasts for several turns and can be set by moves or abilities.\n\n--------------------------------------------------\nTypes of Terrain\n--------------------------------------------------\n\nElectric Terrain:\n- Boosts Electric-type move damage by 30%\n- Prevents grounded Pok\u00e9mon from falling asleep\n- Activates abilities such as Surge Surfer\n\nGrassy Terrain:\n- Restores 1/16 of max HP each turn for grounded Pok\u00e9mon\n- Boosts Grass-type move damage by 30%\n- Reduces damage from certain ground-based moves (e.g., Earthquake)\n\nMisty Terrain:\n- Reduces Dragon-type move damage by 50% on grounded targets\n- Prevents status conditions on grounded Pok\u00e9mon",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\terrain.txt",
+      "filename": "terrain.txt",
+      "stem": "terrain",
+      "chunk_index": 1,
+      "chunk_size": 834
+    }
+  },
+  {
+    "id": 48,
+    "text": "(e.g., Earthquake)\n\nMisty Terrain:\n- Reduces Dragon-type move damage by 50% on grounded targets\n- Prevents status conditions on grounded Pok\u00e9mon\n\nPsychic Terrain:\n- Boosts Psychic-type move damage by 30%\n- Prevents priority moves from hitting grounded Pok\u00e9mon\n\n--------------------------------------------------\nTerrain Mechanics\n--------------------------------------------------\n\n- Terrain effects last 5 turns\n- Duration can be extended to 8 turns with held items (e.g., Terrain Extender)\n- Only one terrain can be active at a time\n- Flying-type Pok\u00e9mon and those with Levitate are not affected\n\n--------------------------------------------------\nAbility Interaction\n--------------------------------------------------\n\nSome abilities activate or benefit from terrain effects.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\terrain.txt",
+      "filename": "terrain.txt",
+      "stem": "terrain",
+      "chunk_index": 2,
+      "chunk_size": 778
+    }
+  },
+  {
+    "id": 49,
+    "text": "Interaction\n--------------------------------------------------\n\nSome abilities activate or benefit from terrain effects.\n\nExamples:\n- Electric Surge: Sets Electric Terrain on entry\n- Grassy Surge: Sets Grassy Terrain on entry\n- Psychic Surge: Sets Psychic Terrain on entry\n- Misty Surge: Sets Misty Terrain on entry\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Terrain. Retrieved from: https://bulbapedia.bulbagarden.net/wiki/Terrain\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of terrain mechanics and their impact on battle strategies.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\terrain.txt",
+      "filename": "terrain.txt",
+      "stem": "terrain",
+      "chunk_index": 3,
+      "chunk_size": 720
+    }
+  },
+  {
+    "id": 50,
+    "text": "Type-Enhancing Items Guide\n\nType-enhancing items are held items that increase the power of moves of a specific type. \nThey provide a consistent damage boost without drawbacks.\n\n--------------------------------------------------\nEffect\n--------------------------------------------------\n\n- Boost the power of moves that match a specific type\n- Standard boost: 20% (1.2\u00d7 damage)\n- No negative side effects\n- Always active while held\n\n--------------------------------------------------\nCommon Type-Enhancing Items\n--------------------------------------------------\n\nFire-Type:\n- Charcoal \u2192 boosts Fire-type moves\n\nWater-Type:\n- Mystic Water \u2192 boosts Water-type moves\n\nElectric-Type:\n- Magnet \u2192 boosts Electric-type moves\n\nGrass-Type:\n- Miracle Seed \u2192 boosts Grass-type moves\n\nIce-Type:\n- Never-Melt Ice \u2192 boosts Ice-type moves\n\nFighting-Type:\n- Black Belt \u2192 boosts Fighting-type moves",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\type_enhancing_items.txt",
+      "filename": "type_enhancing_items.txt",
+      "stem": "type_enhancing_items",
+      "chunk_index": 1,
+      "chunk_size": 881
+    }
+  },
+  {
+    "id": 51,
+    "text": "Miracle Seed \u2192 boosts Grass-type moves\n\nIce-Type:\n- Never-Melt Ice \u2192 boosts Ice-type moves\n\nFighting-Type:\n- Black Belt \u2192 boosts Fighting-type moves\n\nPoison-Type:\n- Poison Barb \u2192 boosts Poison-type moves\n\nGround-Type:\n- Soft Sand \u2192 boosts Ground-type moves\n\nFlying-Type:\n- Sharp Beak \u2192 boosts Flying-type moves\n\nPsychic-Type:\n- Twisted Spoon \u2192 boosts Psychic-type moves\n\nBug-Type:\n- Silver Powder \u2192 boosts Bug-type moves\n\nRock-Type:\n- Hard Stone \u2192 boosts Rock-type moves\n\nGhost-Type:\n- Spell Tag \u2192 boosts Ghost-type moves\n\nDragon-Type:\n- Dragon Fang \u2192 boosts Dragon-type moves\n\nDark-Type:\n- Black Glasses \u2192 boosts Dark-type moves\n\nSteel-Type:\n- Metal Coat \u2192 boosts Steel-type moves\n\nFairy-Type:\n- Pixie Plate \u2192 boosts Fairy-type moves\n\n--------------------------------------------------\nMechanics\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\type_enhancing_items.txt",
+      "filename": "type_enhancing_items.txt",
+      "stem": "type_enhancing_items",
+      "chunk_index": 2,
+      "chunk_size": 847
+    }
+  },
+  {
+    "id": 52,
+    "text": "Plate \u2192 boosts Fairy-type moves\n\n--------------------------------------------------\nMechanics\n--------------------------------------------------\n\n- Only affects moves of the matching type\n- Stacks with STAB (Same-Type Attack Bonus)\n- Does not lock the user into moves\n- Does not cause recoil or drawbacks\n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------\n\n- Provides a safe damage boost without restrictions\n- Often used when flexibility is more important than raw power\n- Useful for Pok\u00e9mon that need to switch moves frequently\n- Alternative to Choice items when move locking is undesirable\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\type_enhancing_items.txt",
+      "filename": "type_enhancing_items.txt",
+      "stem": "type_enhancing_items",
+      "chunk_index": 3,
+      "chunk_size": 867
+    }
+  },
+  {
+    "id": 53,
+    "text": "e\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of type-enhancing item effects.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\type_enhancing_items.txt",
+      "filename": "type_enhancing_items.txt",
+      "stem": "type_enhancing_items",
+      "chunk_index": 4,
+      "chunk_size": 323
+    }
+  },
+  {
+    "id": 54,
+    "text": "Utility and Offensive Items Guide\n\nUtility and offensive items are held items that provide unique effects, boost damage, or trigger under specific conditions. \nThese items are commonly used in competitive play to gain strategic advantages.\n\n--------------------------------------------------\nMain Utility and Offensive Items\n--------------------------------------------------\n\nLife Orb:\n- Increases damage by 30%\n- User loses 10% of max HP after each damaging attack\n\nFocus Sash:\n- If the Pok\u00e9mon is at full HP, it survives a hit with 1 HP\n- Only activates once per battle\n\nWeakness Policy:\n- Raises Attack and Special Attack by 2 stages when hit by a super-effective move\n\nExpert Belt:\n- Boosts damage of super-effective moves by 20%\n\nChoice Lock Reminder:\n- Some offensive strategies combine with Choice Items for maximum damage output",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\utility_items.txt",
+      "filename": "utility_items.txt",
+      "stem": "utility_items",
+      "chunk_index": 1,
+      "chunk_size": 837
+    }
+  },
+  {
+    "id": 55,
+    "text": "Boosts damage of super-effective moves by 20%\n\nChoice Lock Reminder:\n- Some offensive strategies combine with Choice Items for maximum damage output\n\n--------------------------------------------------\nUtility-Based Items\n--------------------------------------------------\n\nRocky Helmet:\n- Damages attackers on contact (1/6 of their max HP)\n\nAir Balloon:\n- Grants temporary immunity to Ground-type moves\n- Pops after taking damage\n\nHeavy-Duty Boots:\n- Prevents damage and effects from entry hazards\n\n--------------------------------------------------\nTrigger-Based Mechanics\n--------------------------------------------------\n\n- Many utility items activate only under certain conditions\n- Some items are consumed after activation (e.g., Focus Sash)\n- Some provide permanent effects while held (e.g., Expert Belt)",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\utility_items.txt",
+      "filename": "utility_items.txt",
+      "stem": "utility_items",
+      "chunk_index": 2,
+      "chunk_size": 811
+    }
+  },
+  {
+    "id": 56,
+    "text": "certain conditions\n- Some items are consumed after activation (e.g., Focus Sash)\n- Some provide permanent effects while held (e.g., Expert Belt)\n\n--------------------------------------------------\nCompetitive Use\n--------------------------------------------------\n\n- Life Orb is used for maximum damage output at the cost of HP\n- Focus Sash ensures survival for fragile Pok\u00e9mon\n- Weakness Policy is used to turn defense into offense\n- Expert Belt rewards targeting weaknesses\n- Utility items help control hazards, positioning, and matchups\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\utility_items.txt",
+      "filename": "utility_items.txt",
+      "stem": "utility_items",
+      "chunk_index": 3,
+      "chunk_size": 746
+    }
+  },
+  {
+    "id": 57,
+    "text": "e\n--------------------------------------------------\nBulbapedia. (n.d.). Held item. Retrieved from:\nhttps://bulbapedia.bulbagarden.net/wiki/Held_item\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of utility and offensive held item effects in competitive gameplay.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\utility_items.txt",
+      "filename": "utility_items.txt",
+      "stem": "utility_items",
+      "chunk_index": 4,
+      "chunk_size": 359
+    }
+  },
+  {
+    "id": 58,
+    "text": "Weather Effects Guide\n\nWeather conditions are battlefield effects that influence damage, abilities, and other battle mechanics. Weather typically lasts for several turns and can be extended by certain abilities or items.\n\n--------------------------------------------------\nTypes of Weather\n--------------------------------------------------\n\nRain:\n- Boosts Water-type moves by 50%\n- Reduces Fire-type move damage by 50%\n- Activates certain abilities (e.g., Swift Swim, Rain Dish)\n\nSun (Harsh Sunlight):\n- Boosts Fire-type moves by 50%\n- Reduces Water-type move damage by 50%\n- Activates certain abilities (e.g., Chlorophyll, Solar Power)\n\nSandstorm:\n- Damages most Pok\u00e9mon each turn (1/16 of max HP)\n- Does not damage Rock, Ground, or Steel types\n- Boosts Special Defense of Rock-type Pok\u00e9mon by 50%\n- Activates abilities such as Sand Rush and Sand Force",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\weather.txt",
+      "filename": "weather.txt",
+      "stem": "weather",
+      "chunk_index": 1,
+      "chunk_size": 854
+    }
+  },
+  {
+    "id": 59,
+    "text": "not damage Rock, Ground, or Steel types\n- Boosts Special Defense of Rock-type Pok\u00e9mon by 50%\n- Activates abilities such as Sand Rush and Sand Force\n\nSnow (Hail):\n- Damages most Pok\u00e9mon each turn (1/16 of max HP)\n- Does not damage Ice-type Pok\u00e9mon\n- May provide defensive boosts to Ice-types (depending on generation)\n- Activates abilities such as Slush Rush\n\n--------------------------------------------------\nWeather Mechanics\n--------------------------------------------------\n\n- Weather conditions typically last 5 turns\n- Duration can be extended to 8 turns with held items (e.g., Damp Rock, Heat Rock)\n- Weather can be changed by moves or abilities\n- Only one weather condition can be active at a time\n\n--------------------------------------------------\nAbility Interaction\n--------------------------------------------------",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\weather.txt",
+      "filename": "weather.txt",
+      "stem": "weather",
+      "chunk_index": 2,
+      "chunk_size": 829
+    }
+  },
+  {
+    "id": 60,
+    "text": "can be active at a time\n\n--------------------------------------------------\nAbility Interaction\n--------------------------------------------------\n\nMany abilities depend on weather conditions to activate or gain benefits.\n\nExamples:\n- Drizzle: Automatically sets rain\n- Drought: Automatically sets sunlight\n- Swift Swim: Doubles Speed in rain\n- Chlorophyll: Doubles Speed in sunlight\n\n--------------------------------------------------\nSource\n--------------------------------------------------\nBulbapedia. (n.d.). Weather. Retrieved from: https://bulbapedia.bulbagarden.net/wiki/Weather\n\nThis dataset was created using information from Bulbapedia, a community-driven Pok\u00e9mon encyclopedia, selected for its structured explanation of weather mechanics and their impact on battle strategies.",
+    "metadata": {
+      "source": "D:\\SoftwareEng\\SEMESTER6\\COMP263-Deep Learning\\CodyBarkerAssingment4\\RAGDocs\\weather.txt",
+      "filename": "weather.txt",
+      "stem": "weather",
+      "chunk_index": 3,
+      "chunk_size": 788
+    }
+  }
+]
